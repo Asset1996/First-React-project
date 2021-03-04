@@ -14,7 +14,7 @@
   grid-area: h;
   position: relative;
   width: 100%;
-  background-color: darkcyan;
+  background-color: greenyellow;
 }
 
 .app-header img{
@@ -25,13 +25,13 @@
 .app-nav {
   grid-area: n;
   position: relative;
-  background-color: hotpink;
+  background-color: greenyellow;
 }
 
 .app-content {
   grid-area: c;
   position: relative;
-  background-color: lime;
+  background-color: white;
 }
 
 .content-image img {
