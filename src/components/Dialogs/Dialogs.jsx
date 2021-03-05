@@ -13,20 +13,36 @@ const Message_item =(props)=> {
     );
 };
 
+let dialogs_data = [
+    {id: 1, name: "Batman"},
+    {id: 2, name: "Robin"},
+    {id: 3, name: "Joker"},
+    {id: 4, name: "Iron man"}
+];
+
+let message_data =[
+    {id: 1, message: "Heelloo"},
+    {id: 2, message: "How are you"},
+    {id: 3, message: "Long time no see!"},
+    {id: 4, message: "What plan u got 4 weeknd?"}
+];
+
+let dialog_elem = dialogs_data.map(
+    el => <Dialog_item id={el.id} name={el.name} />
+)
+
+let message_elem = message_data.map(
+    attr => <Message_item message={attr.message}/>
+)
+
 const Dialogs = (props) => {
     return (
         <div className={d.dial_content}>
             <div className={d.dialogs}>
-                <Dialog_item name="Fadid" id="1"/>
-                <Dialog_item name="Lara" id="2"/>
-                <Dialog_item name="Rachel" id="3"/>
-                <Dialog_item name="Michael" id="4"/>
-                <Dialog_item name="John" id="5"/>
+                {dialog_elem}
             </div>
             <div className={d.messages}>
-                <Message_item message="Hi"/>
-                <Message_item message="I am a hero"/>
-                <Message_item message="Whassap"/>
+                {message_elem}
             </div>
         </div>
     );
