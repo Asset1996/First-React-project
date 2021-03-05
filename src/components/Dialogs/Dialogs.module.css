@@ -1,0 +1,30 @@
+.dial_content {
+    display: grid;
+    grid-template-areas: 
+    "dialogs messages";
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 5px;
+   
+}
+
+.dial_content div {
+    background-color: khaki;
+}
+
+.dialogs {
+    grid-area: dialogs;
+    border-radius: 5px;
+}
+
+.dialog_item {
+    padding: 5px;
+}
+
+.messages{
+    grid-area: messages;
+    border-radius: 5px;
+}
+
+.message_item {
+    padding: 10px;
+}

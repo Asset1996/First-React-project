@@ -1,5 +1,5 @@
 .app-wrapper {
-  margin: 0 auto;
+  margin: 50px auto;
   display: grid;
   width: 1200px;
   grid-template-rows: 60px 1fr;
@@ -8,32 +8,4 @@
   "h h"
   "n c";
   grid-gap: 10px;
-}
-
-.app-header {
-  grid-area: h;
-  position: relative;
-  width: 100%;
-  background-color: greenyellow;
-}
-
-.app-header img{
-  position: relative;
-  height: 100%;
-}
-
-.app-nav {
-  grid-area: n;
-  position: relative;
-  background-color: greenyellow;
-}
-
-.app-content {
-  grid-area: c;
-  position: relative;
-  background-color: white;
-}
-
-.content-image img {
-  width: 100%;
 }

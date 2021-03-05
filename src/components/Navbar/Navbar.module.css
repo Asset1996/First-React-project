@@ -1,0 +1,14 @@
+.app_nav {
+  grid-area: n;
+  position: relative;
+  background-color: greenyellow;
+}
+
+.app_nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.app_nav a.active {
+  color: gold;
+}

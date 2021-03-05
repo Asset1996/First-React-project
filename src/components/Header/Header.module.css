@@ -1,0 +1,11 @@
+.app_header {
+  grid-area: h;
+  position: relative;
+  width: 100%;
+  background-color: greenyellow;
+}
+
+.app_header img{
+  position: relative;
+  height: 100%;
+}
