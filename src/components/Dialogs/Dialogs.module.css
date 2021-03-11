@@ -8,7 +8,7 @@
 }
 
 .dial_content div {
-    background-color: khaki;
+    background-color: rgb(158, 150, 75);
 }
 
 .dialogs {
@@ -20,11 +20,18 @@
     padding: 5px;
 }
 
+.dialog_item a{
+    text-decoration: none;
+    color: white;
+}
+
 .messages{
     grid-area: messages;
     border-radius: 5px;
 }
 
 .message_item {
-    padding: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
 }

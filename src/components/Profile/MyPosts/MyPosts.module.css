@@ -1,0 +1,28 @@
+.myposts_main {
+    float: left;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar_image img{
+    width: 50px;
+}
+
+.avatar_image {
+    padding: 10px;
+    color: white;
+}
+
+.avatar button {
+    height: 36.4px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.avatar textarea {
+    margin: 10px;
+}
