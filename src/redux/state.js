@@ -1,3 +1,5 @@
+import {rerenderDom} from '../render';
+
 let state = {
     Post_data: [
         {text: "This is my first post", id:"Post id: 1"},
@@ -18,6 +20,15 @@ let state = {
         {id: 3, message: "Long time no see!"},
         {id: 4, message: "What plan u got 4 weeknd?"}
     ],
+}
+
+export let add_post =(post_message)=> {
+    let new_post = {
+        text: post_message,
+        id: "Post id: 6",
+    };
+    state.Post_data.push(new_post);
+    rerenderDom(state);
 }
 
 export default state;

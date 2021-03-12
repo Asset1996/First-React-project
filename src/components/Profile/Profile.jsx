@@ -7,7 +7,7 @@ const Profile =(props)=> {
             <div className={c.content_image}>
                 <img src="https://cdn.hipwallpaper.com/i/87/74/l3wfih.jpg"></img>
             </div>
-            <MyPosts state={props.state}/>
+            <MyPosts state={props.state} add_post={props.add_post}/>
         </div>
     )
 }
