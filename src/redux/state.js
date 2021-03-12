@@ -8,6 +8,7 @@ let state = {
         {text: "This is my fourth post", id:"Post id: 4"},
         {text: "This is my fifth post", id:"Post id: 5"}
     ],
+    new_post_text: 'Text here...',
     dialogs_data: [
         {id: 1, name: "Batman"},
         {id: 2, name: "Robin"},
@@ -28,6 +29,12 @@ export let add_post =(post_message)=> {
         id: "Post id: 6",
     };
     state.Post_data.push(new_post);
+    rerenderDom(state);
+}
+
+export let text_change =(text)=> {
+    state.new_post_text = text;
+    console.log(state.new_post_text);
     rerenderDom(state);
 }
 
